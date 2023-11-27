@@ -1,0 +1,38 @@
+.button_2{
+    padding: 1rem;
+    position: relative;
+    background: black;
+    transition: 800ms ease background;
+
+    z-index: 1;
+    color: #FF4364;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 1rem;
+    border: 2px white solid;
+}
+
+.button_2:hover{
+    cursor: pointer;
+}
+
+.button_2::after{
+    content: "";
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: white;
+    z-index: -1;
+    transition:400ms ease all;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px 3px #0003;
+}
+
+.button_2:hover::after{
+    left:0;
+    width: 100%;
+    transition: 800ms ease all;
+}

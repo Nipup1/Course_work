@@ -1,0 +1,152 @@
+main{
+    position: relative;
+    height: 27rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Left{
+    width: 4%;
+    border: none;
+    background-image: url("../Images/Arrow_Left.svg");
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+    padding: 0;
+}
+
+.Right{
+    width: 4%;
+    border: none;
+    background-image: url("../Images/Arrow_Right.svg");
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+    padding: 0;
+}
+
+.Right:hover,.Left:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.BlockCards{
+    width: 90%;
+    display: flex;
+    overflow: hidden;
+}
+
+.Card{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    background-color: #FFFFFF;
+    background-size: 27rem 100%;
+    transition: all 0.5s;
+}
+
+.Image{
+    margin: 1rem 0 2rem;
+}
+
+.BlockMarks{
+    height: 10rem;
+}
+
+.Title{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.ImgMark{
+    display: flex;
+    flex-direction: column;
+}
+
+.Text{
+    display: flex;
+    flex-direction: column;
+
+    text-indent: 2rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    width: calc(100% - 300px);
+}
+
+.Marks{
+    display: flex;
+    width: 15rem;
+}
+
+.Mark{
+    color: black;
+    font-weight: 700;
+    position: relative;
+    margin: 1rem 0.6rem 0 1.2rem;
+}
+
+.Mark::after{
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url("../Images/star.svg");
+    left: -1.3rem;
+}
+
+.Mark::before{
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 3rem;
+
+    top: 1.51rem;
+    left: -1.15rem;
+    border-radius: 5px;
+    background-color: #dfee17;
+}
+
+.Battery::after{
+    background-image: url("../Images/battery.svg");
+}
+
+.Battery::before{
+    background-color: #2cdb1f;
+}
+
+.Ruble::after{
+    background-image: url("../Images/Ruble.svg");
+}
+
+.Ruble::before{
+    background-color: #232dbe;
+}
+
+.Weight::after{
+    background-image: url("../Images/Weight_2.svg");
+}
+
+.Weight::before{
+    background-color: #000000;
+}
+
+#Card2{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+#Card2 img{
+
+}
+
+#Card3{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}

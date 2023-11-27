@@ -1,0 +1,136 @@
+.Logo_container{
+    display: flex;
+    align-items: flex-end;
+}
+
+.Logo{
+    color: #FF4364;
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.Navigation a{
+    transition: all 0.3s;
+    color: white;
+}
+
+.Navigation a:hover{
+    text-decoration: none;
+    transition: all 0.3s;
+    color: #FF4364;
+}
+
+.HeaderText{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.Header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    position: relative;
+
+    width: 100%;
+    height: 25rem;
+    background: black;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 5%);
+    border-radius: 0 0 3% 3%;
+}
+
+.Header::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left:1.8rem;
+    width: 0.25rem;
+    height: 2rem;
+    background: #FF4364;
+    border-radius: 0.25rem;
+    animation: anima_arrow_2 5s infinite;
+}
+
+.Header::before{
+    content: "";
+    position: absolute;
+    bottom: 1.8rem;
+    left:0;
+    width: 2rem;
+    height: 0.25rem;
+    background: #FF4364;
+    border-radius: 0.25rem;
+    animation: anima_arrow_3 5s infinite;
+}
+
+.Arrow::after{
+    content: "";
+    position: absolute;
+    bottom: 1rem;
+    left:2.8rem;
+    width: 0.25rem;
+    height: 2rem;
+    background: #FF4364;
+    border-radius: 0.25rem;
+    animation: anima_arrow_1 5s infinite;
+}
+
+.Arrow::before{
+    content: "";
+    position: absolute;
+    bottom: 2.8rem;
+    left:1rem;
+    width: 2rem;
+    height: 0.25rem;
+    background: #FF4364;
+    border-radius: 0.25rem;
+    animation: anima_arrow_4 5s infinite;
+}
+
+.HeaderImage{
+    margin-left: 1rem;
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 20rem;
+    box-shadow: 5px 5px 11px -2px rgba(255, 255, 255, 0.6);
+}
+
+.HeaderImage::after{
+    content: "";
+    position: absolute;
+    width: 27.5rem;
+    height: 27.5rem;
+    border-radius: 0 0 0 37%;
+    bottom: 0;
+    left: 0;
+    background: url("../Images/Header_image.svg");
+}
+
+.Login{
+    color: #FF4364;
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-weight: 800;
+    transition: all 0.3s;
+}
+
+.Login:hover{
+    color: white;
+    transition: all 0.3s;
+}
+
+.Wheel{
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    animation: wheel 1s infinite;
+}

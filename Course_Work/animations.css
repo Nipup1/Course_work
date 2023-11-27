@@ -1,0 +1,174 @@
+@keyframes anima_arrow_1 {
+    from{
+        z-index: 0;
+        bottom: 1rem;
+        left:2.8rem;
+    }
+    75%{
+        z-index: 0;
+        bottom: 27rem;
+        left:28.8rem;
+    }
+    76%{
+        z-index: -1;
+    }
+    85%{
+        z-index: -1;
+        bottom: -1rem;
+        left:0.8rem;
+    }
+    86%{
+        z-index: 0;
+    }
+    to{
+        z-index: 0;
+        bottom: 1rem;
+        left:2.8rem;
+    }
+}
+
+
+@keyframes anima_arrow_2 {
+    from{
+        z-index: 0;
+        bottom: 0;
+        left:1.8rem;
+    }
+    75%{
+        z-index: 0;
+        bottom: 26rem;
+        left:27.8rem;
+    }
+    76%{
+        z-index: -1;
+    }
+    85%{
+        z-index: -1;
+        bottom: -2rem;
+        left:-0.2rem;
+    }
+    86%{
+        z-index: 0;
+    }
+    to{
+        z-index: 0;
+        bottom: 0;
+        left:1.8rem;
+    }
+}
+
+@keyframes anima_arrow_3 {
+    from{
+        z-index: 0;
+        bottom: 1.8rem;
+        left:0;
+    }
+    75%{
+        z-index: 0;
+        bottom: 27.8rem;
+        left:26rem;
+    }
+    76%{
+        z-index: -1;
+    }
+    85%{
+        z-index: -1;
+        bottom: -0.2rem;
+        left:-2rem;
+    }
+    86%{
+        z-index: 0;
+    }
+    to{
+        z-index: 0;
+        bottom: 1.8rem;
+        left:0;
+    }
+}
+
+@keyframes anima_arrow_4 {
+    from{
+        z-index: 0;
+        bottom: 2.8rem;
+        left:1rem;
+    }
+    75%{
+        z-index: 0;
+        bottom: 28.8rem;
+        left:27rem;
+    }
+    76%{
+        z-index: -1;
+    }
+    85%{
+        z-index: -1;
+        bottom: 0.8rem;
+        left:-1rem;
+    }
+    86%{
+        z-index: 0;
+    }
+    to{
+        z-index: 0;
+        bottom: 2.8rem;
+        left:1rem;
+    }
+}
+
+@keyframes wheel {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes block_anim_2 {
+    from{
+        top:-38px;
+        left:-38px
+    }
+    25%{
+        top: 50px;
+        left: 230px;
+    }
+    50%{
+        top: 90px;
+        left: -23px;
+    }
+    to{
+        top:-38px;
+        left: -38px;
+    }
+}
+
+@keyframes block_anim_3 {
+    from{
+        bottom:-38px;
+        right: 100px;
+    }
+    25%{
+        bottom:117px;
+        right:-25px;
+    }
+    50%{
+        bottom:-25px;
+        right: -25px;
+    }
+    to{
+        bottom:-38px;
+        right: 100px;
+    }
+}
+
+@keyframes block_anim_rev {
+    from{
+        right: 200px;
+        top: 200px;
+    }
+    to{
+        right: 0;
+        top:0;
+    }
+}

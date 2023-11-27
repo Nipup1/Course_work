@@ -1,0 +1,212 @@
+body{
+    overflow-x: hidden;
+    width: 100%;
+    height: 90rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    overflow: hidden;
+    width: 90%;
+    height: 50rem;
+}
+
+.MainInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 20rem;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 17px 8px 32px 2px rgba( 31, 38, 135, 0.37 );
+}
+
+.MainInfo::after{
+    z-index: -2;
+    content: "";
+    position: absolute;
+    background-color: rgb( 0, 0, 0, 0.75 );
+    background-image: url("../Images/background.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    bottom: 0;
+    width: 100%;
+    height: 20rem;
+    filter: blur(3px);
+}
+
+.MainText{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.MainTitle{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.ExampKat{
+    width: 100%;
+    height: 30rem;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5rem 10rem 10rem 5rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.Card{
+    height: 23rem;
+    width: 14rem;
+    position: relative;
+    grid-area: 1 / 1 / span 3 / 2;
+    overflow: visible;
+
+    background: rgb( 0, 0, 0, 0.75 );
+    box-shadow: 17px 8px 32px 2px rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    border-radius: 2rem;
+}
+
+.Card::after{
+    z-index: 1;
+    content: "";
+    position: absolute;
+    height: 15rem;
+    width: 100%;
+    top: 5rem;
+    background-image: url("../Images/сам1.png");
+    background-size: 14rem auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.CardText{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.CardTitle{
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+}
+.CardSubText{
+    color: white;
+    font-size: 18px;
+}
+
+.Mark{
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    bottom: 2rem;
+    left: 2.3rem;
+}
+
+.Mark::before{
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 3rem;
+
+    bottom: -0.91rem;
+    left: -1.15rem;
+    border-radius: 5px;
+    background-color: #dfee17;
+}
+
+.Mark::after{
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url("../Images/star.svg");
+    left: -1.3rem;
+}
+
+.Card .button_2{
+    overflow: hidden;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    background-color: black;
+
+
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.Card .button_2::after{
+    border-radius: 0.4rem;
+}
+
+.Heart{
+    position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
+    top: 1rem;
+    right: 1rem;
+    background-image: url("../Images/Heart_not.svg");
+    appearance: none;
+    transition: all 0.5s;
+}
+
+.Heart:checked{
+    background-image: url("../Images/Heart.svg");
+    transition: all 0.5s;
+}
+
+#Card2{
+    grid-area: 2 / 2 / span 3 / 3;
+}
+
+#Card2::after{
+    background-image: url("../Images/сам2.png");
+}
+
+#Card3{
+    grid-area: 1 / 3 / span 3 / 4;
+}
+
+#Card3::after{
+    background-image: url("../Images/сам3.png");
+}
+
+.Teg{
+    width: 14rem;
+    height: 3rem;
+
+    grid-area: 1 / 2 / 2 / 3;
+    background: rgba( 255, 67, 100, 1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 1.5em;
+
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration-line: underline;
+}
+
+#Teg2{
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+#Teg3{
+    grid-area: 4 / 3 / 5 / 4;
+}

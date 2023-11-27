@@ -1,0 +1,296 @@
+main{
+    position: relative;
+    width: 100%;
+    height: 27rem;
+    display: flex;
+
+    overflow: hidden;
+}
+
+aside{
+    width: 20%;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.Filter{
+    width: 90%;
+    height: max-content;
+
+    box-shadow: 0px 2px 8px 4px rgba(34, 60, 80, 0.3);
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.Catalog{
+    width: 80%;
+    height: 27rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+
+    overflow-y: scroll;
+}
+
+.Catalog::-webkit-scrollbar {
+    display: none;
+}
+
+.Card{
+    display: flex;
+
+    height: 15rem;
+    width: 95%;
+    position: relative;
+    margin: 1rem 0 1rem 0;
+
+    background: rgba( 0, 0, 0, 0.75 );
+    box-shadow: 0px 2px 8px 4px rgba(34, 60, 80, 0.3);
+    backdrop-filter: blur( 13.5px );
+    border-radius: 2rem;
+}
+
+.Image{
+    z-index: 1;
+    content: "";
+    height: 14rem;
+    width: 25%;
+
+    background-image: url("../Images/сам1.png");
+    background-size: 14rem 14rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 1rem;
+
+    margin: 1% 1%;
+}
+
+.TextMark{
+    display: flex;
+    flex-direction: column;
+
+    height: 15rem;
+    width: 72%;
+}
+
+.CardText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 100%;
+    height: 80%;
+}
+
+.CardTitle{
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+
+    margin-top: 1rem;
+}
+
+.CardSubText{
+    color: white;
+    font-size: 18px;
+    text-align: justify;
+    width: 95%;
+    line-height: 1.5rem;
+
+    margin-top: 1rem;
+}
+
+.Marks{
+    display: flex;
+    width: 20rem;
+    height: 20%;
+}
+
+.Mark{
+    color: white;
+    font-weight: 700;
+    position: relative;
+    margin: 0 2.2rem 0 1.2rem;
+}
+
+.Mark::before{
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 3rem;
+
+    top: 1.51rem;
+    left: -1.15rem;
+    border-radius: 5px;
+    background-color: #dfee17;
+}
+
+#Card2 .Image{
+    background-image: url("../Images/сам2.png");
+}
+
+#Card3 .Image{
+    background-image: url("../Images/сам3.png");
+}
+
+.Mark::after{
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url("../Images/star.svg");
+    left: -1.3rem;
+}
+
+.Battery::after{
+    background-image: url("../Images/battery.svg");
+}
+
+.Battery::before{
+    background-color: #2cdb1f;
+}
+
+.Ruble::after{
+    background-image: url("../Images/Ruble.svg");
+}
+
+.Ruble::before{
+    background-color: #232dbe;
+}
+
+.Weight::after{
+    background-image: url("../Images/Weight.svg");
+}
+
+.Weight::before{
+    background-color: #FFFFFF;
+}
+
+.Card .button_2{
+    overflow: hidden;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    background-color: black;
+
+
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.Card .button_2::after{
+    border-radius: 0.4rem;
+}
+
+.Heart{
+    position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
+    top: 1rem;
+    right: 1rem;
+    background-image: url("../Images/Heart_not.svg");
+    appearance: none;
+    transition: all 0.5s;
+}
+
+.Heart:checked{
+    background-image: url("../Images/Heart.svg");
+    transition: all 0.5s;
+}
+
+.TitleFilter {
+    font-weight: 700;
+    font-size: 24px;
+
+    margin: 0.4rem 0 0 0.4rem;
+}
+
+.Arrow{
+    display: block;
+    background-image: url("../Images/Arrow.svg");
+    width: 24px;
+    height: 24px;
+
+    margin-right: 0.25rem;
+    margin-top: 0.25rem;
+    transition: all 0.5s;
+}
+
+
+#Arrow:checked ~ .FilterCategor{
+    height: 8.2rem;
+    transition: all 0.5s;
+}
+
+#Arrow:checked + .LabelCategor .Arrow{
+    transform: rotate(-90deg);
+    transition: all 0.5s;
+}
+
+.LabelCategor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 0.25rem;
+}
+
+.CategorText{
+    font-size: 18px;
+
+    display: flex;
+    width: max-content;
+    background-color: rgb(255,67,100, 0.5);
+    border-radius: 1rem;
+    padding: 0.25rem 0.5rem;
+    margin: 0.25rem 0;
+
+    transition: all 1s;
+}
+
+.FilterCategor{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-left: 1rem;
+    overflow: hidden;
+    height: 0;
+    transition: all 1s;
+}
+
+.FilterSort{
+    display: flex;
+    width: 100%;
+
+    justify-content: space-around;
+}
+
+.Filter input{
+    appearance: none;
+    display: none;
+}
+
+.Filter input:checked + .CategorText{
+    background-color: rgb(255,67,100, 1);
+    transition: all 0.5s;
+}
+
+.button_more{
+    display: flex;
+    background-color: rgb(0, 0, 0, 0.75);
+    height: max-content;
+    width: max-content;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    color: #FFFFFF;
+    border-radius: 1rem;
+    font-size: 24px;
+}

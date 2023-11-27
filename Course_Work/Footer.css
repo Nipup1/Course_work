@@ -1,0 +1,95 @@
+.Footer{
+    position: relative;
+    background-color: black;
+    height: 15rem;
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding-top: 5rem;
+}
+
+.Address{
+    color: #FF4364;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.Address a{
+    color: darkgrey;
+    transition: all 0.5s;
+}
+
+.Address a:hover{
+    color: #FF4364;
+    transition: all 0.5s;
+}
+
+.ImgTg{
+    background-image: url("Images/tg.svg");
+    height: 48px;
+    width: 48px;
+    margin: 2%;
+}
+
+.ImgVk{
+    background-image: url("Images/vk.svg");
+    height: 48px;
+    width: 48px;
+    margin: 2%;
+}
+
+.ImgTen{
+    background-image: url("Images/tenchat.svg");
+    height: 48px;
+    width: 48px;
+    margin: 2% 0 2% 2%;
+}
+
+.Connect{
+    width: max-content;
+    color: #FF4364;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.Connect .connectImg:hover{
+    cursor: pointer;
+}
+
+.connectImg{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.NavigationFoot{
+    color: darkgrey;
+    display: flex;
+    flex-direction: column;
+}
+
+.NavigationFoot a{
+    margin: 1%;
+    transition: all 0.5s;
+}
+
+.NavigationFoot a:hover{
+    color: #FF4364;
+    transition: all 0.5s;
+}
+
+.NavigationFootTitle{
+    color: #FF4364;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.NavAndCon{
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type = "image/jpg" href = "../Images/Логотип.svg">
+    <link rel="stylesheet" href ="../Header_min.css">
+    <link rel="stylesheet" href ="catalog_main.css">
+    <link rel="stylesheet" href ="../Button_2.css">
+    <link rel="stylesheet" href ="/Course_Work/main.css">
+    <link rel="stylesheet" href ="../Footer.css">
+    <title>Католог</title>
+</head>
+<body>
+    <header class = "Header">
+        <a class ="Logo" href="http://localhost:63343/WebStorm_Projects/Course_Work/Main/Main_page.html?_ijt=4c282m07v6p2d2qr2hbb793ipu">
+            <img src="../Images/Логотип.svg" width="40" height="40">
+            Электросамокаты
+        </a>
+
+        <div class="Navigation">
+            <a>Главная</a>
+            <a>Каталог</a>
+            <a>Избранное</a>
+        </div>
+
+        <a class = "Login">
+            <img src="../Images/Login.svg">
+            Войти
+        </a>
+    </header>
+
+    <main>
+        <aside>
+            <div class = "Filter">
+                <p class="TitleFilter">Сортировать по</p>
+                <div class="FilterSort">
+                    <input id="Vozrast" type="checkbox">
+                    <label for="Vozrast" class="CategorText">Возрастанию</label>
+                    <input id="Ubyv" type="checkbox">
+                    <label for="Ubyv" class="CategorText">Убыванию</label>
+                </div>
+
+                <div>
+                    <input id="Arrow" type="checkbox">
+
+                    <div class="LabelCategor">
+                        <label for="Arrow" class="TitleFilter">Категории</label>
+                        <label for="Arrow" class="Arrow"></label>
+                    </div>
+
+                    <div class ="FilterCategor">
+                        <input id="Weight" type="checkbox">
+                        <label for="Weight" class="CategorText">Вес</label>
+
+                        <input id="Cost" type="checkbox">
+                        <label for="Cost" class="CategorText">Цена</label>
+
+                        <input id="Mark" type="checkbox">
+                        <label for="Mark" class="CategorText">Оценка</label>
+
+                        <input id="Battery" type="checkbox">
+                        <label for="Battery" class="CategorText">Батарея</label>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class = "Catalog">
+            <div class="Card">
+                <div class="Image"></div>
+                <div class="TextMark">
+                    <div class="CardText">
+                        <p class="CardTitle">Kugoo HX</p>
+                        <p class="CardSubText">Эта стильная модель предназначена для езды по городу. Она имеет отличное качество сборки. Производитель собрал скутер из надежных материалов, приятными наощупь. Провода спрятаны в раме и в рулевой стойке.
+                            По сравнению с другими похожими моделями, Kugoo HX имеет съемную батарею на рулевой стойке. Эта особенность имеет положительные и отрицательные стороны.</p>
+                    </div>
+                    <div class="Marks">
+                        <div id="Star" class="Mark">4.93</div>
+                        <div class="Mark Battery">4.93</div>
+                        <div class="Mark Ruble">4.93</div>
+                        <div class="Mark Weight">4.93</div>
+
+                        <button class = "button_2">Перейти</button>
+                    </div>
+                </div>
+                <input class="Heart" type="checkbox">
+            </div>
+
+            <div id="Card2" class="Card">
+                <div class="Image"></div>
+                <div class="TextMark">
+                    <div class="CardText">
+                        <p class="CardTitle">Xiaomi</p>
+                        <p class="CardSubText">Габариты у самоката сверхкомпактные, идентичны классическому самокату,
+                            только Xiaomi Scooter M365 ещё может складываться, что просто незаменимая вещь для многих. Собирается самокат не больше минуты и становится почти в 2 раза меньше при и без того минимальных размерах. Вес составляет 12.5 кг.</p>
+                    </div>
+                    <div class="Marks">
+                        <div class="Mark">4.93</div>
+                        <div class="Mark Battery">4.93</div>
+                        <div class="Mark Ruble">4.93</div>
+                        <div class="Mark Weight">4.93</div>
+
+                        <button class = "button_2">Перейти</button>
+                    </div>
+                </div>
+                <input class="Heart" type="checkbox">
+            </div>
+
+            <div id="Card3" class="Card">
+                <div class="Image"></div>
+                <div class="TextMark">
+                    <div class="CardText">
+                        <p class="CardTitle">Kick Scooter</p>
+                        <p class="CardSubText">Мощный и тихий электрический самокат с 6″ колесами и бесщеточным мотором с макс. мощностью 630Вт. Электронная тормозная система с технологией рекуперативного торможения (EBS) подзаряжает батарею во время торможения.
+                            Технология Smart BMS (Battery Management System) защищает от избыточнго заряда, глубокого разряда, короткого замыкания и проч.</p>
+                    </div>
+                    <div class="Marks">
+                        <div class="Mark">4.93</div>
+                        <div class="Mark Battery">4.93</div>
+                        <div class="Mark Ruble">4.93</div>
+                        <div class="Mark Weight">4.93</div>
+
+                        <button class = "button_2">Перейти</button>
+                    </div>
+                </div>
+                <input class="Heart" type="checkbox">
+
+            </div>
+            <button class="button_more">Показать ещё</button>
+        </div>
+    </main>
+
+    <footer class="Footer">
+        <address class = "Address">
+            &copy Николай Жариков
+            <a href="tel:01234567890">+7-111-228-00-55</a>
+            <a href="mailto:vanavnavvnawad@mail.com">nikolay@gmail.com</a>
+        </address>
+
+        <div class="NavAndCon">
+            <div class="NavigationFoot">
+                <p class="NavigationFootTitle">Карта сайта</p>
+                <a>Главная</a>
+                <a>Каталог</a>
+                <a>Избранное</a>
+            </div>
+
+            <div class="Connect">Связаться с нами
+                <div class="connectImg">
+                    <div class="ImgVk"></div>
+                    <div class="ImgTg"></div>
+                    <div class="ImgTen"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../Random.js"></script>
+</body>
+</html>
