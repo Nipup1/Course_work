@@ -112,7 +112,7 @@ main{
 }
 
 .Battery::after{
-    background-image: url("../Images/battery.svg");
+    background-image: url("../Images/Battery.svg");
 }
 
 .Battery::before{
