@@ -68,4 +68,8 @@
     #HeaderLogo{
         font-size: 30px;
     }
+
+    .Burger a{
+        font-size: 20px;
+    }
 }
