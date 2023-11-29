@@ -1,7 +1,7 @@
 .Footer{
     position: relative;
     background-color: black;
-    height: max-content;
+    height: 10rem;
     width: 100%;
 
     display: flex;
@@ -132,7 +132,7 @@
 
 @media (min-width: 320px) and (max-width: 768px){
     .Footer{
-        height: 18rem;
+        height: 19rem;
     }
 
     .FooterContent{
