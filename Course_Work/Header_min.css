@@ -53,3 +53,9 @@
     transition: all 0.3s;
     color: #FF4364;
 }
+
+@media (max-width: 1000px){
+    .Header{
+        display: none;
+    }
+}

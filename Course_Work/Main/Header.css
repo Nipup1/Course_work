@@ -134,3 +134,9 @@
     left: 3rem;
     animation: wheel 1s infinite;
 }
+
+@media (max-width: 1000px){
+    .Header{
+        display: none;
+    }
+}
