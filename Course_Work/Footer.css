@@ -49,11 +49,9 @@
 
 .Connect{
     width: max-content;
-    color: #FF4364;
-    font-weight: 700;
-    font-size: 30px;
-
     grid-area: content;
+
+    margin-bottom: 1rem;
 }
 
 .Connect .connectImg:hover{
@@ -106,6 +104,10 @@
 }
 
 @media (min-width: 769px) and (max-width: 1000px){
+    .Footer{
+
+    }
+
     .FooterContent{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 50% 50%;

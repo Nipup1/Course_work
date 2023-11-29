@@ -9,6 +9,7 @@
     <link rel="stylesheet" href ="../main.css">
     <link rel="stylesheet" href ="../Footer.css">
     <link rel="stylesheet" href ="../Header_burger.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Католог</title>
 </head>
 <body>
@@ -34,7 +35,7 @@
         <div class="BurgerOpen">
             <a class ="Logo" href="http://localhost:63343/WebStorm_Projects/Course_Work/Main/Main_page.html?_ijt=4c282m07v6p2d2qr2hbb793ipu">
                 <img src="../Images/Логотип.svg" width="40" height="40">
-                Электросамокаты
+                <p id="HeaderLogo">Электросамокаты</p>
             </a>
 
             <img class="BurgerImg" src="../Images/Burger.svg">
@@ -151,11 +152,11 @@
 
     <footer class="Footer">
         <div class="FooterContent">
-            <address class = "Address">
-                &copy Николай Жариков
-                <a href="tel:01234567890">+7-111-228-00-55</a>
-                <a href="mailto:vanavnavvnawad@mail.com">nikolay@gmail.com</a>
-            </address>
+            <div class = "Address">
+                <p class="NavigationFootTitle">&copy Николай Жариков</p>
+                <i><a href="tel:01234567890">+7-111-228-00-55</a></i>
+                <i><a href="mailto:vanavnavvnawad@mail.com">nikolay@gmail.com</a></i>
+            </div>
 
             <div class="NavigationFoot">
                 <p class="NavigationFootTitle">Карта сайта</p>
@@ -164,7 +165,8 @@
                 <a href="../ Favorites/Favorites_page.html">Избранное</a>
             </div>
 
-            <div class="Connect">Связаться с нами
+            <div class="Connect">
+                <p class="NavigationFootTitle">Связаться с нами</p>
                 <div class="connectImg">
                     <div class="ImgVk"></div>
                     <div class="ImgTg"></div>

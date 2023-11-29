@@ -33,6 +33,7 @@
     align-content: center;
     justify-content: center;
     background-color: black;
+    overflow: hidden;
 
     top: 130px;
     border-top: #FFFFFF solid 2px;
@@ -44,7 +45,7 @@
 
 .Burger a{
     color: white;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 700;
     text-decoration-line: underline;
     transition: all 0.5s;
@@ -61,8 +62,10 @@
     .HeaderWithBurger{
         display: flex;
     }
+}
 
-    .Logo{
-        font-size: 50px;
+@media (max-width: 502px) {
+    #HeaderLogo{
+        font-size: 30px;
     }
 }
