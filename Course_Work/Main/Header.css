@@ -135,6 +135,10 @@
     animation: wheel 1s infinite;
 }
 
+.ImgLogo{
+    transform: rotate(-45deg);
+}
+
 @media (max-width: 1000px){
     .Header{
         display: none;

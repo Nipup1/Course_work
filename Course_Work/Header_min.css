@@ -54,6 +54,10 @@
     color: #FF4364;
 }
 
+.ImgLogo{
+    transform: rotate(-45deg);
+}
+
 @media (max-width: 1000px){
     .Header{
         display: none;
