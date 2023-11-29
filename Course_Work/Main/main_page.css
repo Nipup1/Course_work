@@ -292,7 +292,7 @@ main{
         height: 14rem;
     }
 
-    .MainInfo::after{
+    .MainInfo::before{
         height: 14rem;
     }
 
