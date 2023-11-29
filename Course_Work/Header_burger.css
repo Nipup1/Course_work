@@ -38,6 +38,7 @@
     top: 140px;
     border-top: #FFFFFF solid 2px;
     opacity: 0;
+    height: 0;
 
 
     transition: opacity 0.2s, height 0.7s;
