@@ -44,7 +44,7 @@
 
 .Burger a{
     color: white;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 700;
     text-decoration-line: underline;
     transition: all 0.5s;
@@ -60,5 +60,9 @@
 @media (max-width: 1000px){
     .HeaderWithBurger{
         display: flex;
+    }
+
+    .Logo{
+        font-size: 50px;
     }
 }
