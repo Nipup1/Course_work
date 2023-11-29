@@ -1,7 +1,7 @@
 .Footer{
     position: relative;
     background-color: black;
-    height: 18.5rem;
+    height: max-content;
     width: 100%;
 
     display: flex;
@@ -105,6 +105,10 @@
 
 @media (min-width: 769px) and (max-width: 1000px){
 
+    .Footer{
+        height: 15rem;
+    }
+
     .FooterContent{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 50% 50%;
@@ -127,6 +131,10 @@
 }
 
 @media (min-width: 320px) and (max-width: 768px){
+    .Footer{
+        height: 18rem;
+    }
+
     .FooterContent{
         grid-template-columns: max-content;
         grid-template-rows: 1fr 1fr 1fr;

@@ -1,7 +1,7 @@
 body{
     overflow-x: hidden;
     width: 100%;
-    height: 90rem;
+    height: max-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -227,9 +227,6 @@ main{
 }
 
 @media (max-width: 1000px){
-    body{
-        height: 98rem;
-    }
 
     main{
         margin-top: 1rem;
@@ -267,9 +264,6 @@ main{
 }
 
 @media (max-width: 768px) {
-    body{
-        height: 123.5rem;
-    }
 
     main{
         margin-top: 1rem;
