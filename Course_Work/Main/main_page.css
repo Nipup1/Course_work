@@ -45,6 +45,7 @@ main{
     background-image: url("../Images/background.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    background-position: center;
     transform: rotate(45deg) matrix(-1, 0, 0, 1, 0, 0);
     bottom: 0;
     width: 100%;
