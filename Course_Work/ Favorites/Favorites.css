@@ -1,8 +1,9 @@
 main{
     position: relative;
-    height: 27rem;
+    height: max-content;
     display: flex;
     justify-content: space-around;
+    overflow: hidden;
 }
 
 .Left{
@@ -41,25 +42,31 @@ main{
 .BlockCards{
     width: 90%;
     display: flex;
-    overflow: hidden;
+    position: relative;
+    height: 0;
+
+    transition: all 0.1s;
 }
 
 .Card{
     width: 100%;
-    display: flex;
-    flex-direction: row;
+    height: max-content;
+    display: grid;
+    grid-template-columns: 300px calc(100% - 300px);
+    grid-template-rows: 340px calc(100% - 340px);
+    position: absolute;
 
-    background-color: #FFFFFF;
-    background-size: 27rem 100%;
     transition: all 0.5s;
 }
 
 .Image{
     margin: 1rem 0 2rem;
+    grid-area: 1 / 1 / 2 / 2;
 }
 
 .BlockMarks{
-    height: 10rem;
+    height: max-content;
+    grid-area: 2 / 1 / 3 / 2;
 }
 
 .Title{
@@ -81,7 +88,8 @@ main{
     text-indent: 2rem;
     line-height: 1.5rem;
     text-align: justify;
-    width: calc(100% - 300px);
+    width: 100%;
+    grid-area: 1 / 2 / span 2 / 3;
 }
 
 .Marks{
@@ -145,14 +153,83 @@ main{
     opacity: 0;
     width: 0;
     height: 0;
-}
-
-#Card2 img{
-
+    right: -100%;
 }
 
 #Card3{
     opacity: 0;
     width: 0;
     height: 0;
+    right: 100%;
+}
+
+.Screen{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+@media (max-width: 768px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main{
+        width: 95%;
+        display: grid;
+        grid-template-columns: 3fr 1fr 3fr;
+        grid-template-rows: max-content 5rem;
+    }
+
+    .BlockCards{
+        width: 100%;
+        grid-area: 1 / 1 / 2 / span 3;
+    }
+
+    .Image{
+        grid-area: 1 / 1 / span 3 / 2;
+        justify-self: center;
+    }
+
+    .Left{
+        width: 100%;
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .Screen{
+        display: flex;
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .Right{
+        width: 100%;
+        grid-area: 2 / 3 / 3 / 4;
+    }
+
+    .Card{
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 340px max-content 130px;
+    }
+
+    .Image{
+        grid-area: 1 / 1 / 2 / 2;
+        justify-self: center;
+    }
+
+    .Text{
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .BlockMarks{
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .Marks{
+        width: 100%;
+        justify-content: space-around;
+    }
 }
