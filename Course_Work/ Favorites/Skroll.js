@@ -10,7 +10,7 @@ set_Height();
 screen[0].innerHTML = index + 1;
 
 window.addEventListener('resize', ()=>{
-    set_Height();
+    setTimeout(set_Height, 500);
 });
 function set_Height(){
     if(window.innerWidth <= 768){

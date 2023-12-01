@@ -78,7 +78,7 @@ aside{
     display: flex;
     flex-direction: column;
 
-    height: max-content;
+    height: 100%;
     width: 72%;
 }
 
