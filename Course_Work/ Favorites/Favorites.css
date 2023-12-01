@@ -178,7 +178,7 @@ main{
     }
 
     main{
-        width: 95%;
+        width: 90%;
         display: grid;
         grid-template-columns: 3fr 1fr 3fr;
         grid-template-rows: max-content 5rem;
