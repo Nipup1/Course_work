@@ -174,4 +174,12 @@ div input:hover{
     .blockImg{
         display: none;
     }
+
+    .FormContain::after{
+        display: none;
+    }
+
+    .FormContain::before{
+        display: none;
+    }
 }

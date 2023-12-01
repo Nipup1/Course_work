@@ -175,4 +175,12 @@ div input:hover{
     .divForm{
         width: 100%;
     }
+
+    .FormContain::after{
+        display: none;
+    }
+
+    .FormContain::before{
+        display: none;
+    }
 }
