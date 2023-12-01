@@ -28,7 +28,6 @@ main{
     background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
-    transform: rotate(180deg);
     transition: all 0.5s;
     padding: 0;
 }
