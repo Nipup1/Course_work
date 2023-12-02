@@ -12,6 +12,7 @@ screen[0].innerHTML = index + 1;
 window.addEventListener('resize', ()=>{
     setTimeout(set_Height, 500);
 });
+
 function set_Height(){
     if(window.innerWidth <= 768){
         block_objects[0].style.height = Number(340 + 130 + curr_card.lastElementChild.clientHeight) + "px";
